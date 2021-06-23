@@ -1,5 +1,6 @@
 # NLW Valoriza
 
+
 ## Regras
 
 - Cadastro de usuário
@@ -10,11 +11,11 @@
 
 - Cadastro de TAG
 
-  [ ] Não é permitido cadastrar mais de uma tag com o mesmo nome
+  [ x ] Não é permitido cadastrar mais de uma tag com o mesmo nome
 
-  [ ] Não é permitido cadastrar tag sem nome
+  [ x ] Não é permitido cadastrar tag sem nome
 
-  [ ] Não é permitido o cadastro por usuários que não sejam administradores
+  [ x ] Não é permitido o cadastro por usuários que não sejam administradores
 
 - Cadastro de elogios
 
@@ -23,3 +24,7 @@
   [ ] Não é permitido cadastrar elogios para usuários inválidos
 
   [ ] O usuário precisa estar autenticado na aplicação
+
+- Tratamento de exceção
+
+[ ] A aplicação deve tratar exceções, informar um statusCode correto e a mensagem do erro
