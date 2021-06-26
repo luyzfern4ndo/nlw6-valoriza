@@ -49,9 +49,13 @@ $ cd nlw6-valoriza-nodejs
 $ yarn install # if you use yarn
 $ npm install # if you use npm
 
-# Starting the express server
+# Starting the express server on port 3000
 $ yarn dev # if you use yarn
 $ npm run dev # if you use npm
+
+# To create the tables on Database
+$ yarn typeorm migration:run # if you use yarn
+$ npm run typeorm migration:run #if you use npm
 ```
 
 ---
