@@ -25,8 +25,8 @@ Please note that this project was built on the NLW 6th edition educational initi
 This project was made using the following technologies:
 
 - [NodeJS](https://nodejs.org/en/)
-- [Express](https://expressjs.com/)
 - [Typescript](https://github.com/microsoft/TypeScript)
+- [Express](https://expressjs.com/)
 - [JsonWebToken](https://jwt.io/)
 - [TypeORM](https://typeorm.io/#/)
 
