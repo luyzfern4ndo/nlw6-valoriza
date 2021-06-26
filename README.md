@@ -8,12 +8,12 @@
 
 ## :pushpin: Table of Contents
 
-- [Introduction](#-introduction)
+- [Introduction](#introduction)
 - [Technologies](#-technologies)
 - [Requirements](#-requirements)
 - [How to install](#-how-to-install)
 - [Future Improvements](#-future-improvements)
-- [Licence](#-license)
+- [License](#-license)
 
 ## :book: Introduction
 
@@ -65,7 +65,7 @@ $ npm run dev # if you use npm
 - [ ] Make a Frontend to connect whith this API
 
 
-## :closed_book: Licence
+## :closed_book: License
 
 This project is under the [MIT](https://github.com/luyzfern4ndo/nlw6-valoriza/blob/master/LICENSE) license.
 
