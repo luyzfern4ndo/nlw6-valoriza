@@ -3,7 +3,7 @@
 [![linkedin-badge][linkedin-shield]][link-linkedin] ![GitHub top language](https://img.shields.io/github/languages/top/luyzfern4ndo/nlw6-valoriza)
 ![GitHub repo size](https://img.shields.io/github/repo-size/luyzfern4ndo/nlw6-valoriza) ![GitHub last commit](https://img.shields.io/github/last-commit/luyzfern4ndo/nlw6-valoriza) ![License MIT](https://img.shields.io/badge/license-MIT-green)
 
-[linkedin-shield]: https://img.shields.io/badge/-Luiz%20Fernando%20Tavares-blueviolet?logo=linkedin
+[linkedin-shield]: https://img.shields.io/badge/-Luiz%20Fernando%20Tavares-8257E5?logo=linkedin
 [link-linkedin]: https://www.linkedin.com/in/luiz-fernando-tavares-141311187/
 
 ## :pushpin: Table of Contents
