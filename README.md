@@ -36,7 +36,7 @@ You will need [Git](https://git-scm.com/), [NodeJS](https://nodejs.org/) and [Ya
 
 ## :fire: How to install
 
-You must clone this repository and through terminal type the following:
+You must clone this repository and through terminal type the following commands:
 
 ```bash
 # Clone the repository
