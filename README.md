@@ -40,7 +40,7 @@ You must clone this repository and through terminal type the following:
 
 ```bash
 # Clone the repository
-$ git clone https://github.com/luyzfern4ndo/nlw6-valoriza-nodejs.git
+$ git clone https://github.com/luyzfern4ndo/nlw6-valoriza.git
 
 # Go into the repository
 $ cd nlw6-valoriza-nodejs
