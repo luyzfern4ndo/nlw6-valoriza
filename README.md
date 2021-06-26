@@ -8,12 +8,12 @@
 
 ## :pushpin: Table of Contents
 
-- [Introduction](#introduction)
-- [Technologies](#-technologies)
-- [Requirements](#-requirements)
-- [How to install](#-how-to-install)
-- [Future Improvements](#-future-improvements)
-- [License](#-license)
+- [Introduction](#book-introduction)
+- [Technologies](#rocket-technologies)
+- [Requirements](#clipboard-requirements)
+- [How to install](#fire-how-to-install)
+- [Future Improvements](#man_astronaut-future-improvements)
+- [License](#closed_book-license)
 
 ## :book: Introduction
 
