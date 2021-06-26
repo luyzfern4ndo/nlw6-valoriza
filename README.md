@@ -18,7 +18,7 @@
 ## :book: Introduction
 
 This is an Nodejs API built to register users that can makes praise to others through tags and comments.
-Please note that this project was built on the NLW 6th edition educational initiative promoted by Rocketseat and led by Educator Daniele Leão.
+Please note that this project was built on the NLW 6th edition educational initiative promoted by Rocketseat and led by Educator [Daniele Leão](https://github.com/danileao).
 
 ## :rocket: Technologies
 
