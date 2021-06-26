@@ -1,16 +1,27 @@
 import { NextFunction, Request, Response } from 'express';
+import { getCustomRepository } from 'typeorm';
 
-export function ensureAdmin(
+import { UsersRepositories } from '../repositories/UsersRepositories';
+
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+export async function ensureAdmin(
   request: Request,
   response: Response,
   next: NextFunction,
 ) {
-  // Verificar se o usuário é admin
-  const admin = true;
+  const { id } = request.user;
 
-  if (admin) {
-    return next();
+  const usersRepositories = getCustomRepository(UsersRepositories);
+
+  const user = await usersRepositories.findOne(id);
+
+  if (!user) {
+    return response.status(400).json({ error: 'User does not exists' });
   }
 
-  return response.status(401).json({ message: 'Unauthorized' });
+  if (!user.admin) {
+    return response.status(401).json({ error: 'Unauthorized' });
+  }
+
+  return next();
 }
