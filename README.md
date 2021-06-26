@@ -10,10 +10,10 @@
 
 - [Introduction](#-introduction)
 - [Technologies](#-technologies)
+- [Requirements](#-requirements)
 - [How to install](#-how-to-install)
-- [Features](#-features)
-- [How to use](#-how-to-use)
-- [Routes](#-routes)
+- [Future Improvements](#-future-improvements)
+- [Licence](#-license)
 
 ## :book: Introduction
 
@@ -64,57 +64,8 @@ $ npm run dev # if you use npm
 
 - [ ] Make a Frontend to connect whith this API
 
-## Features
 
-- Users register
-
-  - [x] It is not allowed to register more than one user with the same email
-  - [x] It is not allowed to register user without e-mail
-
-- Tags register
-  - [x] It is not allowed to register more than one tag with the same name
-  - [x] It is not allowed to register tag without a name
-  - [x] Registration by users who are not administrators is not allowed and not logged
-
----
-
-## How to use
-
-Now you'll have the Express Server listening the port 3000 and you will be able to use the application routes.
-
-At first you'll need some program like **Insomnia**, **Postman** or anything like that.
-
-## Routes
-
-Methods and expected parameters if any
-
-- ### Users
-
-```bash
-# Create a user
-POST: http://localhost:3000/users
-# name: string, email: string, password: string, admin: boolean
-
-# List all users
-GET: http:localhost:3000/users
-```
-
-- ### Sessions
-  Log into the application
-
-```bash
-
-POST: http://localhost:3000/users
-# email: string, password: string
-```
-
----
-
-## :bug: Issues
-
-Feel free to file a new issue with a respective title and description on the the nlw-valoriza repository. If you already found a solution to your problem, i would love to review your pull request!
-
-## :closed_book: Liscence
+## :closed_book: Licence
 
 This project is under the [MIT](https://github.com/luyzfern4ndo/nlw6-valoriza/blob/master/LICENSE) license.
 
