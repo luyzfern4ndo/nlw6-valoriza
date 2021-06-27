@@ -17,9 +17,10 @@
 
 ## :book: Introduction
 
-This is an Nodejs API built to register users that can makes praise to others through tags and comments.
+A project developed based on Typescript. This Nodejs API was built to register users that can makes praise to others through tags and comments.
 Please note that this project was built on the NLW 6th edition educational initiative promoted by Rocketseat and led by Educator [Daniele Leão](https://github.com/danileao).
 
+In this project, we use the concept of creating **class entities** to represent _database tables_, **class repositories** to handle essential manipulation methods like _create, find, change and delete_. In addition we also have **service classes** to access the repositories' methods, perform error return validations and complete the purpose of the called method. **Class controllers** are used to be responsible for requests and responses, trigger the service class and return the response.
 ## :rocket: Technologies
 
 This project was made using the following technologies:
