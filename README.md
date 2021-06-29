@@ -63,7 +63,7 @@ $ npm run typeorm migration:run #if you use npm
 
 ## :man_astronaut: Future Improvements
 
-- [ ] Isolate responsibility using useCases and creating methods within repositories.
+- [x] Isolate responsibility using useCases and creating methods within repositories.
 
 - [ ] Use an email sending service to alert who will receive a compliment
 
