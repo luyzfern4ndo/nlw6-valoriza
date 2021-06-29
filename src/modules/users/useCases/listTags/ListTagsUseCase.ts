@@ -1,10 +1,9 @@
 import { classToPlain } from 'class-transformer';
 import { getCustomRepository } from 'typeorm';
 
-import { Tag } from '../entities/Tag';
-import { TagsRepositories } from '../repositories/TagsRepositories';
+import { TagsRepositories } from '../../repositories/TagsRepositories';
 
-class ListTagsService {
+class ListTagsUseCase {
   async execute() {
     const tagsRepositories = getCustomRepository(TagsRepositories);
 
@@ -15,4 +14,4 @@ class ListTagsService {
   }
 }
 
-export { ListTagsService };
+export { ListTagsUseCase };

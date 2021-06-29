@@ -1,14 +1,14 @@
 import { Request, Response } from 'express';
 
-import { ListUserSendComplimentsService } from '../services/ListUserSendComplimentsService';
+import { ListUserSendComplimentsUseCase } from './ListUserSendComplimentsUseCase';
 
 class ListUserSendComplimentsController {
   async handle(request: Request, response: Response): Promise<Response> {
     const { id } = request.user;
 
-    const listUserSendComplimentsService = new ListUserSendComplimentsService();
+    const listUserSendComplimentsUseCase = new ListUserSendComplimentsUseCase();
 
-    const compliments = await listUserSendComplimentsService.execute(id);
+    const compliments = await listUserSendComplimentsUseCase.execute(id);
 
     return response.json(compliments);
   }
