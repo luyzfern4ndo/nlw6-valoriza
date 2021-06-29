@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import { getCustomRepository } from 'typeorm';
 
-import { UsersRepositories } from '../repositories/UsersRepositories';
+import { UsersRepositories } from '../modules/users/repositories/UsersRepositories';
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export async function ensureAdmin(

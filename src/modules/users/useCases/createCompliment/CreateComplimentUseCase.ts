@@ -1,9 +1,9 @@
 import { getCustomRepository } from 'typeorm';
 
-import { Compliment } from '../entities/Compliment';
-import { AppError } from '../errors/AppError';
-import { ComplimentsRepositories } from '../repositories/ComplimentsRepositories';
-import { UsersRepositories } from '../repositories/UsersRepositories';
+import { AppError } from '../../../../errors/AppError';
+import { Compliment } from '../../entities/Compliment';
+import { ComplimentsRepositories } from '../../repositories/ComplimentsRepositories';
+import { UsersRepositories } from '../../repositories/UsersRepositories';
 
 interface IRequest {
   tag_id: string;
@@ -12,7 +12,7 @@ interface IRequest {
   message: string;
 }
 
-class CreateComplimentService {
+class CreateComplimentUseCase {
   async execute({
     message,
     tag_id,
@@ -50,4 +50,4 @@ class CreateComplimentService {
   }
 }
 
-export { CreateComplimentService };
+export { CreateComplimentUseCase };

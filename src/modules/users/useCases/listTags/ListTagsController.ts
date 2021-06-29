@@ -1,12 +1,12 @@
 import { Request, Response } from 'express';
 
-import { ListTagsService } from '../services/ListTagsService';
+import { ListTagsUseCase } from './ListTagsUseCase';
 
 class ListTagsController {
   async handle(request: Request, response: Response): Promise<Response> {
-    const listTagsService = new ListTagsService();
+    const listTagsUseCase = new ListTagsUseCase();
 
-    const tags = await listTagsService.execute();
+    const tags = await listTagsUseCase.execute();
 
     return response.json(tags);
   }

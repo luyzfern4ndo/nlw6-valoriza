@@ -1,8 +1,8 @@
 import { hash } from 'bcryptjs';
 import { getCustomRepository } from 'typeorm';
 
-import { AppError } from '../errors/AppError';
-import { UsersRepositories } from '../repositories/UsersRepositories';
+import { AppError } from '../../../../errors/AppError';
+import { UsersRepositories } from '../../repositories/UsersRepositories';
 
 interface IRequest {
   name: string;
@@ -11,7 +11,7 @@ interface IRequest {
   password: string;
 }
 
-class CreateUserService {
+class CreateUserUseCase {
   async execute({ name, email, admin = false, password }: IRequest) {
     const usersRepository = getCustomRepository(UsersRepositories);
 
@@ -44,4 +44,4 @@ class CreateUserService {
   }
 }
 
-export { CreateUserService };
+export { CreateUserUseCase };

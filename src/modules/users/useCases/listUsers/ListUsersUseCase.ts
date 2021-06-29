@@ -1,10 +1,9 @@
 import { classToPlain } from 'class-transformer';
 import { getCustomRepository } from 'typeorm';
 
-import { User } from '../entities/User';
-import { UsersRepositories } from '../repositories/UsersRepositories';
+import { UsersRepositories } from '../../repositories/UsersRepositories';
 
-class ListUsersService {
+class ListUsersUseCase {
   async execute() {
     const usersRepositories = getCustomRepository(UsersRepositories);
 
@@ -14,4 +13,4 @@ class ListUsersService {
   }
 }
 
-export { ListUsersService };
+export { ListUsersUseCase };

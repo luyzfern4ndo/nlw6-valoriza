@@ -1,14 +1,14 @@
 import { Request, Response } from 'express';
 
-import { CreateUserService } from '../services/CreateUserService';
+import { CreateUserUseCase } from './CreateUserUseCase';
 
 class CreateUserController {
   async handle(request: Request, response: Response) {
     const { name, email, admin, password } = request.body;
 
-    const createUserService = new CreateUserService();
+    const createUserUseCase = new CreateUserUseCase();
 
-    const user = await createUserService.execute({
+    const user = await createUserUseCase.execute({
       name,
       email,
       admin,

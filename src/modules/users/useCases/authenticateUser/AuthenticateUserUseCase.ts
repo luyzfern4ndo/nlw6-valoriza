@@ -2,15 +2,15 @@ import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 import { getCustomRepository } from 'typeorm';
 
-import { AppError } from '../errors/AppError';
-import { UsersRepositories } from '../repositories/UsersRepositories';
+import { AppError } from '../../../../errors/AppError';
+import { UsersRepositories } from '../../repositories/UsersRepositories';
 
 interface IRequest {
   email: string;
   password: string;
 }
 
-class AuthenticateUserService {
+class AuthenticateUserUseCase {
   async execute({ email, password }: IRequest): Promise<string> {
     if (!email || !password) {
       throw new AppError('Email or password incorrect');
@@ -47,4 +47,4 @@ class AuthenticateUserService {
   }
 }
 
-export { AuthenticateUserService };
+export { AuthenticateUserUseCase };

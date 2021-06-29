@@ -1,14 +1,15 @@
 import { getCustomRepository } from 'typeorm';
 
-import { AppError } from '../errors/AppError';
-import { TagsRepositories } from '../repositories/TagsRepositories';
+import { AppError } from '../../../../errors/AppError';
+import { Tag } from '../../entities/Tag';
+import { TagsRepositories } from '../../repositories/TagsRepositories';
 
 interface IRequest {
   name: string;
 }
 
-class CreateTagService {
-  async execute({ name }: IRequest) {
+class CreateTagUseCase {
+  async execute({ name }: IRequest): Promise<Tag> {
     const tagsRepositories = getCustomRepository(TagsRepositories);
 
     if (!name) {
@@ -32,4 +33,4 @@ class CreateTagService {
   }
 }
 
-export { CreateTagService };
+export { CreateTagUseCase };
